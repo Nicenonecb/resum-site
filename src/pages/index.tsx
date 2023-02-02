@@ -1,22 +1,18 @@
 
-// import  './index.module.css'
-export default function Home() {
+import BaseInfo from "@/components/my-resume/base-info"
+
+// "h-full w-full bg-gray-700"
+import '../styles/index.module.css'
+export default function Index() {
   return (
-    <>
+    <section className="h-full w-full bg-gray-700 ">
+        <section className="flex flex-col items-center   h-full ">
+          <div className="mt-10"> 王秉政</div>
+          <div>
+            <BaseInfo></BaseInfo>
+          </div>
+        </section>
 
-      <div className='flex w-full  text-8xl'>hello my site</div>
-
-        {/*
-
-
-          base-info -  个人基础信息
-
-          project - 项目精力
-
-          work-show - 简单作品展示
-
-          
-         */}
-    </>
+    </section>
   )
 }
